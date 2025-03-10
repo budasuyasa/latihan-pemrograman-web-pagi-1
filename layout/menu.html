@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Side Menu</title>
+
+    <style>
+        .menu {
+            padding: 20px;
+            border: 1px solid gray;
+            border-radius: 12px;
+            max-width: 150px;
+            /* Menghilangkan icon default dari bullet */
+            list-style-type: none;
+            padding: 6px;
+        }   
+        .menu-list {
+            padding-bottom: 10px;
+        }
+        .menu-list a {
+            display: flex;
+            align-items: center;
+            justify-items: center;
+            padding-left: 4px ;
+            padding-right: 4px ;
+            gap: 5px;
+            color: black;
+            text-decoration: none;
+        }
+        .menu-list a:hover {
+            background-color: pink;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <ul class="menu">
+        <li class="menu-list">
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="currentColor" d="M6 19h3v-5q0-.425.288-.712T10 13h4q.425 0 .713.288T15 14v5h3v-9l-6-4.5L6 10zm-2 0v-9q0-.475.213-.9t.587-.7l6-4.5q.525-.4 1.2-.4t1.2.4l6 4.5q.375.275.588.7T20 10v9q0 .825-.588 1.413T18 21h-4q-.425 0-.712-.288T13 20v-5h-2v5q0 .425-.288.713T10 21H6q-.825 0-1.412-.587T4 19m8-6.75"/></svg>
+                Home
+            </a>
+        </li>
+        <li class="menu-list">
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="currentColor" fill-rule="evenodd" d="M11.5 1a2.5 2.5 0 0 1 2.385 1.756l1.76 6.14q.134.428.212.866q.107.352.109.738v1c0 .663-.263 1.3-.732 1.77c-.469.469-1.1.732-1.77.732h-11c-.663 0-1.3-.263-1.77-.732a2.5 2.5 0 0 1-.732-1.77v-1c0-.25.037-.499.11-.738a7 7 0 0 1 .211-.866l1.76-6.14A2.5 2.5 0 0 1 4.428 1h7.06zm1.97 8h-11a1.495 1.495 0 0 0-1.418 1.01A6 6 0 0 0 .97 11v.5a1.5 1.5 0 0 0 1.499 1.499h11a1.5 1.5 0 0 0 1.499-1.499V11q0-.499-.081-.99A1.5 1.5 0 0 0 13.468 9zm-.5 1a.997.997 0 0 1 1 1a.997.997 0 0 1-1 1a.997.997 0 0 1-1-1a.997.997 0 0 1 1-1M11.5 2H4.44a1.5 1.5 0 0 0-1.43 1.053l-1.44 5.12c.28-.11.584-.169.904-.169h11c.319 0 .624.06.904.169l-1.44-5.12A1.495 1.495 0 0 0 11.507 2z" clip-rule="evenodd"/></svg>
+                My Drive
+            </a>
+        </li>
+        <li class="menu-list">
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="currentColor" fill-rule="evenodd" d="M11.5 1a2.5 2.5 0 0 1 2.385 1.756l1.76 6.14q.134.428.212.866q.107.352.109.738v1c0 .663-.263 1.3-.732 1.77c-.469.469-1.1.732-1.77.732h-11c-.663 0-1.3-.263-1.77-.732a2.5 2.5 0 0 1-.732-1.77v-1c0-.25.037-.499.11-.738a7 7 0 0 1 .211-.866l1.76-6.14A2.5 2.5 0 0 1 4.428 1h7.06zm1.97 8h-11a1.495 1.495 0 0 0-1.418 1.01A6 6 0 0 0 .97 11v.5a1.5 1.5 0 0 0 1.499 1.499h11a1.5 1.5 0 0 0 1.499-1.499V11q0-.499-.081-.99A1.5 1.5 0 0 0 13.468 9zm-.5 1a.997.997 0 0 1 1 1a.997.997 0 0 1-1 1a.997.997 0 0 1-1-1a.997.997 0 0 1 1-1M11.5 2H4.44a1.5 1.5 0 0 0-1.43 1.053l-1.44 5.12c.28-.11.584-.169.904-.169h11c.319 0 .624.06.904.169l-1.44-5.12A1.495 1.495 0 0 0 11.507 2z" clip-rule="evenodd"/></svg>
+                Computers
+            </a>
+        </li>
+
+        <li class="menu-list">
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0-8 0M6 21v-2a4 4 0 0 1 4-4h4m5 7v-6m3 3l-3-3l-3 3"/></svg>
+                Shared With Me
+            </a>
+        </li>
+
+        <li class="menu-list">
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="currentColor" d="M12,1A11,11,0,1,0,23,12,11,11,0,0,0,12,1Zm0,20a9,9,0,1,1,9-9A9,9,0,0,1,12,21Z"/><rect width="2" height="7" x="11" y="6" fill="currentColor" rx="1"><animateTransform attributeName="transform" dur="9s" repeatCount="indefinite" type="rotate" values="0 12 12;360 12 12"/></rect><rect width="2" height="9" x="11" y="11" fill="currentColor" rx="1"><animateTransform attributeName="transform" dur="0.75s" repeatCount="indefinite" type="rotate" values="0 12 12;360 12 12"/></rect></svg>
+                Recent
+            </a>
+        </li>
+    </ul>
+    
+</body>
+</html>
