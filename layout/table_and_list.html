@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .t {
+            display: block;
+        }
+        thead {
+            padding: 10px 10px;
+            background-color: #ff3131;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <table border="1">
+        <!-- Heading table -->
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Nama</th>
+                <th>Kelas</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Agus</td>
+                <td>Pagi 1</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Komang</td>
+                <td>Pagi 2</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td rowspan="2">
+                    <span class="t">Putu</span>
+                    <span class="t">Ketut</span>
+                </td>
+                <td rowspan="2">Pagi 3</td>
+            </tr>
+            <tr>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td colspan="2">A</td>
+                <td>2</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Unordered list -->
+    <ul type="square">
+        <li>Agus</li>
+        <li>Komang</li>
+        <li>A</li>
+    </ul>
+
+    <ol type="A">
+        <li>Agus</li>
+        <li>Komang</li>
+        <li>A</li>
+    </ol>
+    
+</body>
+</html>
