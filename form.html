@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        #pembungkus {
+            width: 100%;
+            margin:2rem auto;
+            border: 1px solid rgb(203, 203, 203);;
+            padding: 8px;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        input[type="text"] {
+            border: 1px solid rgb(203, 203, 203);
+            border-radius: 2px;
+            padding: 4px;
+        }
+
+        .form-item {
+            display: grid;
+            margin-bottom: .4rem;
+            grid-template-columns: 12rem 1fr;
+        }
+        textarea {
+            font-family: sans-serif;
+            border: 1px solid rgb(203, 203, 203);
+            border-radius: 2px;
+            padding: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="pembungkus">
+        <!-- Membuat tag form -->
+         <!-- Enctype adalah atrribute wajib ketika ingin menambahkan form elemen file -->
+        <form method="post" action="proses.php" enctype="multipart/form-data">
+            <div class="form-item">
+                <label for="nama">Nama</label>
+                <input id="nama" required="true" name="nama" type="text" placeholder="Inputkan nama" />
+            </div>
+            
+            <div class="form-item">
+                <label for="asal_sekolah">Asal Sekolah</label>
+                <input id="asal_sekolah" required="true" name="asal_sekolah" type="text" placeholder="SMA 1 Denpasar" />
+            </div>
+
+            <div class="form-item">
+                <label for="alamat">Alamat</label>
+                <textarea id="alamat" name="alamat" placeholder="Alamat lengkap"></textarea>
+            </div>
+
+            <div class="form-item">
+                <label for="jenis_kelamin">Jenis Kelamin</label>
+                <div>
+                    <input id="jk_laki" type="radio" name="jenis_kelamin" value="Laki-laki" /> 
+                    <label for="jk_laki">Laki-laki</label>
+
+                    <input id="jk_perempuan" type="radio" name="jenis_kelamin" value="Perempuan" /> 
+                    <label for="jk_perempuan">Perempuan</label>
+                </div>
+            </div>
+
+            <div class="form-item">
+                <label for="jenis_kelamin">Tahu Primakara dari Mana</label>
+                <div>
+                    <input id="cb_internet" type="checkbox" name="referal" value="Internet" /> 
+                    <label for="cb_internet">Internet</label>
+
+                    <input id="cb_radio" type="checkbox" name="referal" value="Radio" /> 
+                    <label for="cb_radio">Radio</label>
+
+                    <input id="cb_teman" type="checkbox" name="referal" value="Teman" /> 
+                    <label for="cb_teman">Teman</label>
+                </div>
+            </div>
+
+            <div class="form-item">
+                <label for="prodi_pilihan_1">Prodi Pilihan 1</label>
+                <select name="prodi_pilihan_1">
+                    <option value="SI">Sistem Informasi</option>
+                    <option value="IF">Teknik Informatika</option>
+                    <option value="BD">Bisnis Digital</option>
+                </select>
+            </div>
+
+            <div class="form-item">
+                <label for="prodi_pilihan_2">Prodi Pilihan 2</label>
+                <select name="prodi_pilihan_2">
+                    <option value="SI">Sistem Informasi</option>
+                    <option value="IF">Teknik Informatika</option>
+                    <option value="BD">Bisnis Digital</option>
+                </select>
+            </div>
+
+
+            <div class="form-item">
+                <label>Foto Diri</label>
+                <input type="file" name="foto" accept="image/png,image/jpeg,.pdf" />
+            </div>
+
+            <div class="form-item">
+                <label>Email</label>
+                <input type="email" required="true" name="email" />
+            </div>
+
+            <div class="form-item">
+                <label>Warna Favorit</label>
+                <input type="color" required="true" name="warna" />
+            </div>
+
+            <div class="form-item">
+                <label>Website</label>
+                <input type="url" required="true" name="website" />
+            </div>
+
+            <div class="form-item">
+                <label>Website</label>
+                <input type="tel" required="true" name="telepon" />
+            </div>
+
+            <div class="form-item">
+                <label>Tanggal Lahir</label>
+                <input type="date" required="true" name="tanggal_lahir" />
+            </div>
+
+            <div class="form-item">
+                <label>Waktu Daftar</label>
+                <input type="datetime-local" required="true" name="waktu_daftar" />
+            </div>
+
+            <div class="form-item">
+                <label>Password</label>
+                <input type="password" required="true" name="password" />
+            </div>
+
+
+
+
+            <div class="form-item">
+                <label></label>
+                <button type="submit">Kirim</button>
+            </div>
+        </form>        
+
+    </div>
+</body>
+</html>
